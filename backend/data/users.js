@@ -1,4 +1,4 @@
-import bcrypt from 'bccryptjs'
+import bcrypt from 'bcryptjs'
 
 const users = [
     {
@@ -20,3 +20,5 @@ const users = [
     },
 
 ]
+
+export default users
