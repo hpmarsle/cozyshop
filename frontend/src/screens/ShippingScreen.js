@@ -19,7 +19,7 @@ const ShippingScreen = ({history}) => {
     const submitHandler = (e) => {
         e.preventDefault()
         dispatch(saveShippingAddress({address, city, postalCode, country}))
-        history.pushState('/payment')
+        history.push('/payment')
     }
 
     return (
@@ -41,7 +41,7 @@ const ShippingScreen = ({history}) => {
                     <Form.Label>Country</Form.Label>
                     <Form.Control type='text' placeholder='Enter country' value={country} onChange={(e) => setCountry(e.target.value)}></Form.Control>
                 </Form.Group>
-                <Button variant='primary'>
+                <Button type='submit' variant='primary'>
                     Continue
                 </Button>
             </Form>
