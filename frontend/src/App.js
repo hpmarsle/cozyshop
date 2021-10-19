@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
+import ProductListScreen from './screens/ProductListScreen'
 import CartScreen from './screens/CartScreen'
 import LoginScreen from './screens/LoginScreen'
 import { Container } from 'react-bootstrap'
@@ -33,6 +34,7 @@ const App = () => {
             <Route path='/product/:id' component={ProductScreen} />
             <Route path='/cart/:id?' component={CartScreen} />
             <Route path='/admin/userList' component={UserListScreen} />
+            <Route path='/admin/productList' component={ProductListScreen} />
             <Route path='/admin/user/:id/edit' component={UserEditScreen} />
             <Route exact path='/' component={HomeScreen} />
           </Container>
